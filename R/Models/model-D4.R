@@ -2,8 +2,8 @@
 library(rstan)
 library(tidyverse)
 library(gridExtra)
-source("R/Functions/function-2.R")
-source("R/Functions/function-7.R")
+source("R/utils/function-2.R")
+source("R/utils/function-7.R")
 
 # get data ----
 kc <- read.csv("data/kc.csv")

@@ -5,8 +5,8 @@ library(extRemes)
 library(forecast)
 library(tidyverse)
 library(gridExtra)
-source("R/Functions/function-5.R")
-source("R/Functions/function-6.R")
+source("R/utils/function-5.R")
+source("R/utils/function-6.R")
 
 # get data ----
 kc <- read.csv("data/kc.csv")

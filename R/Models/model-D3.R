@@ -3,7 +3,7 @@ library(rstan)
 library(extRemes)
 library(tidyverse)
 library(gridExtra)
-source("R/Functions/function-2.R")
+source("R/utils/function-2.R")
 
 # get data ----
 kc <- read.csv("data/kc.csv")

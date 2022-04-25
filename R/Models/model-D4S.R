@@ -3,8 +3,8 @@ library(rstan)
 library(forecast)
 library(tidyverse)
 library(gridExtra)
-source("R/Functions/function-2.R")
-source("R/Functions/function-7.R")
+source("R/utils/function-2.R")
+source("R/utils/function-7.R")
 
 # get data ----
 kc <- read.csv("data/kc.csv")
@@ -64,7 +64,7 @@ data_s <-list(N=n,
               X=data.frame(intercept=rep(1,n),
                            x=temp_imp))
 
-mod.gev_s <- stan(file='stan/model-D4S_sample4.stan',
+mod.gev_s <- stan(file='stan/model-D4S.stan',
                   data=data_s,
                   seed=1,
                   chains=4,
